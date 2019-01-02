@@ -5,17 +5,12 @@ class About extends Component {
     return (
       <div>
         <p>
-          I most recently worked as a software engineer at Facebook for 4 years.
-          Before that, at Microsoft for a few years. I've worked on a variety of
-          consumer products.
+          I most recently worked as a software engineer intern at{' '}
+          <a href="https://www.lipslut.com">Lipslut</a>. Before that, as a
+          Product Manager at <a href="https://www.dialpad.com">Dialpad</a> for
+          two years. I've also worked for think tanks and government
+          contractors.
         </p>
-
-        <p>A few notable projects I've done outside of work:</p>
-        <ul>
-          <li>One thing</li>
-          <li>Second thing</li>
-          <li>Third thing</li>
-        </ul>
       </div>
     );
   }

@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
+import ProjectSingleLong from './ProjectSingleLong';
+import ProjectSingleShort from './ProjectSingleShort';
 
 class ProjectList extends Component {
   render() {
-    // TODO: Dynamically load projects from GH
-    // TODO: Do I want to connect my GH to it?
-    // TODO: Look at GH API to see how I can do it
-    // TODO: Have a ternary that if 0 or divisible by 3, long one div, else two div
-    return <div>Projects TK</div>;
+    // TODO: Dynamically load projects from GH - research github api
+    // TODO: do this all dynamic at one point?
+    return (
+      <div style={{ width: '100%' }}>
+        <ProjectSingleLong color={'pink'} />
+        <div
+          className="short-projects"
+          style={{ display: 'flex', flexDirection: 'row' }}
+        >
+          <ProjectSingleShort color={'papayawhip'} />{' '}
+          <ProjectSingleShort color={'green'} />{' '}
+        </div>
+        <ProjectSingleLong color={'pink'} />
+      </div>
+    );
   }
 }
 

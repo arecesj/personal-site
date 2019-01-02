@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomeContainer from './HomeContainer';
 import AboutContainer from './AboutContainer';
+import Footer from './Footer';
 import './App.css';
 import {
   Collapse,
@@ -29,9 +30,9 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ marginLeft: '5%', marginRight: '5%' }}>
         {/* Reactstrap Nav */}
-        <Navbar color="light" light expand="md">
+        <Navbar color="white" light expand="md">
           <NavbarBrand href="/">Juan Areces</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -50,6 +51,7 @@ class App extends Component {
           <Route exact path="/" render={() => <HomeContainer />} />
           <Route exact path="/about" render={() => <AboutContainer />} />
         </Switch>
+        <Footer />
       </div>
     );
   }

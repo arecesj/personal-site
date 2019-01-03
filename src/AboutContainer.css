@@ -1,35 +1,18 @@
-.home-container {
+.about-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* align-items: flex-end; */
   align-items: center;
 }
-.intro-title {
-  /* ON THE RIGHT */
-  color: #161617;
-  /* color: #282828; */
-  margin-top: 5%;
-  margin-left: 70%;
-  /* margin-right: 15%; */
-  /* font-weight: bold; */
-  /* CENTER */
-  /* color: white;
-  margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
-  align-self: center; */
-  font-size: 40px;
-  line-height: 2em;
-  letter-spacing: 0em;
-  text-rendering: optimizeLegibility;
+.fade-in {
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
   -moz-animation: fadeIn ease 1s;
   -o-animation: fadeIn ease 1s;
   -ms-animation: fadeIn ease 1s;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -55,7 +38,7 @@
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -10%, 0);
   }
   to {
     opacity: 1;
@@ -83,4 +66,39 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+.about-wrapper {
+  height: 100vh;
+  width: 60%;
+  /* background-color: grey; */
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 45rem;
+}
+.about-text,
+.about-contact {
+  margin-top: 3rem;
+  /* background-color: grey; */
+  /* width: 65%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text-title,
+.about-contact-title {
+  color: #333333;
+  /* color: #ff6b6b; */
+  /* color: white; */
+  /* margin-left: 2rem; */
+  /* margin-top: 2rem; */
+}
+
+.about-text-body,
+.about-contact-body {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }

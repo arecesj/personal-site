@@ -1,4 +1,4 @@
-.about-container {
+.portfolio-container {
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -67,29 +67,35 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.about-title {
+.portfolio-title {
   margin-top: 3rem;
   flex-basis: 40%;
   text-align: left;
   margin-left: 1rem;
 }
-.about-content {
+.portfolio-content {
   flex-basis: 40%;
   align-items: center;
   margin-left: 25rem;
 }
-.content-div {
+.portfolio-content-div {
   /* width: 65%; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
-.about-title {
+.portfolio-title {
   animation: fadeIn ease 3s;
   color: #333333;
 }
 
-.about-body {
+.portfolio-body {
   animation: fadeIn ease 4s;
+}
+
+.content-row1,
+.content-row2 {
+  display: flex;
+  flex-direction: column;
 }

@@ -8,15 +8,16 @@ class AboutContainer extends Component {
   render() {
     return (
       <div className="about-container fade-in">
-        {/* About Text */}
-        <div className="about-wrapper">
-          <div className="about-text">
-            {/* About Text Title */}
-            <div className="about-text-title">
-              <h1>Hey There</h1>
+        <div className="about-title">
+          <h1>ABOUT</h1>
+        </div>
+        <div className="about-content">
+          {/* About Text */}
+          <div className="content-div">
+            <div className="about-title">
+              <h2>Hey There</h2>
             </div>
-            {/* About Text Body */}
-            <div className="about-text-body">
+            <div className="about-body">
               <p>
                 I am a software developer living in San Francisco that enjoys
                 problem solving in smart, beautiful, and efficient ways. Check
@@ -40,11 +41,11 @@ class AboutContainer extends Component {
             </div>
           </div>
           {/* About Contact */}
-          <div className="about-contact">
-            <div className="about-contact-title">
-              <h1>Let's Chat</h1>
+          <div className="content-div">
+            <div className="about-title">
+              <h2>Let's Chat</h2>
             </div>
-            <div className="about-contact-body">
+            <div className="about-body">
               <p>
                 {' '}
                 I enjoy receiving and responding to emails. If you want to chat,

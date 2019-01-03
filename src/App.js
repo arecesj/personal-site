@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomeContainer from './HomeContainer';
 import AboutContainer from './AboutContainer';
-import ProjectContainer from './ProjectContainer';
+import PortfolioContainer from './PortfolioContainer';
 import Footer from './Footer';
 import './App.css';
 import {
@@ -57,7 +57,7 @@ class App extends Component {
             <Route
               exact
               path="/portfolio"
-              render={() => <ProjectContainer />}
+              render={() => <PortfolioContainer />}
             />
           </Switch>
           <Footer />

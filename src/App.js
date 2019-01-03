@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomeContainer from './HomeContainer';
 import AboutContainer from './AboutContainer';
-import ProjectList from './ProjectList';
+import PortfolioContainer from './PortfolioContainer';
 import Footer from './Footer';
 import './App.css';
 import {
@@ -42,7 +42,7 @@ class App extends Component {
                   <NavLink href="/about">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/projects">Current Projects</NavLink>
+                  <NavLink href="/portfolio">Portfolio</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://github.com/arecesj">GitHub</NavLink>
@@ -54,7 +54,11 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={() => <HomeContainer />} />
             <Route exact path="/about" render={() => <AboutContainer />} />
-            <Route exact path="/projects" render={() => <ProjectList />} />
+            <Route
+              exact
+              path="/portfolio"
+              render={() => <PortfolioContainer />}
+            />
           </Switch>
           <Footer />
         </div>

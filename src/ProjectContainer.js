@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './ProjectContainer.css';
 
-class ProjectList extends Component {
+class ProjectContainer extends Component {
   render() {
     // TODO: Dynamically load projects from GH - research github api
     // TODO: do this all dynamic at one point?
-    return <div style={{ width: '100%' }} />;
+    return <div className="project-container"> straight thug </div>;
   }
 }
 
-export default ProjectList;
+export default ProjectContainer;

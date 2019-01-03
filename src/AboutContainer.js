@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './AboutContainer.css';
+import { FaArrowRight } from 'react-icons/fa';
+import { Button } from 'reactstrap';
+
 class AboutContainer extends Component {
   render() {
     return (
@@ -15,13 +18,24 @@ class AboutContainer extends Component {
             {/* About Text Body */}
             <div className="about-text-body">
               <p>
-                I am a software developer living in San Francisco that has a lot
-                of love for problem solving in smart, beautiful, and efficient
-                ways. Check out my{' '}
-                <Link style={{ color: 'black' }} to="/projects">
-                  current projects
-                </Link>{' '}
-                for things that interest me.
+                I am a software developer living in San Francisco that enjoys
+                problem solving in smart, beautiful, and efficient ways. Check
+                out my{' '}
+                <u>
+                  <Link style={{ color: 'black' }} to="/projects">
+                    portfolio
+                  </Link>
+                </u>{' '}
+                for things that interest me or{' '}
+                <u>
+                  <a
+                    style={{ color: 'black' }}
+                    href="https://drive.google.com/file/d/1GyTxl_ZwzgAxoTCibJDsUic82CHL3xhy/view?usp=sharing"
+                  >
+                    my resume
+                  </a>
+                </u>{' '}
+                for past experiences.
               </p>
             </div>
           </div>
@@ -35,13 +49,23 @@ class AboutContainer extends Component {
                 {' '}
                 I enjoy receiving and responding to emails. If you want to chat,
                 then so do I. Email me at{' '}
-                <a style={{ color: 'black' }} href="mailto:jdareces@gmail.com">
-                  jdareces@gmail.com
-                </a>
+                <u>
+                  <a
+                    style={{ color: 'black' }}
+                    href="mailto:jdareces@gmail.com"
+                  >
+                    jdareces@gmail.com
+                  </a>
+                </u>
                 .
               </p>
             </div>
           </div>
+          <Link style={{ animation: 'fadeIn ease 4s' }} to="/portfolio">
+            <Button color="info">
+              My portfolio <FaArrowRight />
+            </Button>
+          </Link>
         </div>
       </div>
     );

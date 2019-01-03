@@ -76,7 +76,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 45rem;
+  margin-left: 50rem;
 }
 .about-text,
 .about-contact {
@@ -99,6 +99,7 @@
 
 .about-text-body,
 .about-contact-body {
+  animation: fadeIn ease 2s;
   margin-left: 10rem;
   margin-right: 10rem;
 }

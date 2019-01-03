@@ -7,16 +7,20 @@ class HomeContainer extends Component {
   render() {
     return (
       <div className="home-container">
-        <div className="intro-content">
-          <span className="intro-title">
-            Juan Areces is a developer, SOMETHING HERE, and dog lover living in
-            San Francisco.{' '}
-          </span>
-        </div>
-        <ProjectList />
+        <span className="intro-title">
+          Juan Areces is a developer and dog lover living in San Francisco
+        </span>
       </div>
     );
   }
 }
 
 export default HomeContainer;
+
+/** EXTRA TEXT ATM
+ * I most recently worked as a software engineer intern at{' '}
+          <a href="https://www.lipslut.com">Lipslut</a>. Before that, as a
+          Product Manager at <a href="https://www.dialpad.com">Dialpad</a> for
+          two years. I've also worked for think tanks and government
+          contractors.
+ */

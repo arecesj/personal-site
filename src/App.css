@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .App {
   text-align: center;
+  background-image: url('https://i.ibb.co/xG0Lq7x/Juan-Mochi.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+.App-body {
+  margin-left: 5%;
+  margin-right: 5%;
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
-    return <div> All Content C Juan Areces</div>;
+    return <div style={{ color: 'grey' }}> © 2019 Juan Areces</div>;
   }
 }
 

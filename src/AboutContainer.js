@@ -23,7 +23,7 @@ class AboutContainer extends Component {
                 problem solving in smart, beautiful, and efficient ways. Check
                 out my{' '}
                 <u>
-                  <Link style={{ color: 'black' }} to="/projects">
+                  <Link style={{ color: 'black' }} to="/portfolio">
                     portfolio
                   </Link>
                 </u>{' '}
@@ -49,7 +49,7 @@ class AboutContainer extends Component {
               <p>
                 {' '}
                 I enjoy receiving and responding to emails. If you want to chat,
-                then so do I. Email me at{' '}
+                then so do I. Feel free to email me at{' '}
                 <u>
                   <a
                     style={{ color: 'black' }}
@@ -64,7 +64,7 @@ class AboutContainer extends Component {
           </div>
           <Link style={{ animation: 'fadeIn ease 4s' }} to="/portfolio">
             <Button color="info">
-              My portfolio <FaArrowRight />
+              Portfolio <FaArrowRight />
             </Button>
           </Link>
         </div>

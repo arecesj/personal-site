@@ -9,35 +9,25 @@ class PortfolioContainer extends Component {
     return (
       <div className="portfolio-container fade-in">
         <div className="portfolio-title">
-          <h1>Portfolio</h1>
+          <h1>PORTFOLIO</h1>
         </div>
         <div className="portfolio-content">
           <div className="portfolio-content-div">
-            <div className="content-row1">
-              <div className="portfolio-title">
+            <div className="cherries-div">
+              <div className="portfolio-content-title">
                 <h2>Cherries</h2>
               </div>
               <div className="portfolio-body">
                 <p>
                   {' '}
-                  A StitchFix like clone. <br />
+                  Created a StitchFix inspired e-commerce site for jewlery
+                  subscriptions. Used React, JavaScript, Gratsby.js, GraphQL,
+                  and Jest. <br />
                   <u>
-                    <a style={{ color: 'black' }} href="https://google.com">
-                      Learn more here
-                    </a>
-                  </u>
-                  .
-                </p>
-              </div>
-              <div className="portfolio-title">
-                <h2>Rithm School</h2>
-              </div>
-              <div className="portfolio-body">
-                <p>
-                  {' '}
-                  A StitchFix like clone. <br />
-                  <u>
-                    <a style={{ color: 'black' }} href="https://google.com">
+                    <a
+                      style={{ color: 'black' }}
+                      href="https://github.com/NEsfandiari/cherries"
+                    >
                       Learn more here
                     </a>
                   </u>
@@ -45,14 +35,15 @@ class PortfolioContainer extends Component {
                 </p>
               </div>
             </div>
-            <div className="content-row2">
-              <div className="portfolio-title">
+            <div className="visijam-div">
+              <div className="portfolio-content-title">
                 <h2>VisiJAM</h2>
               </div>
               <div className="portfolio-body">
                 <p>
                   {' '}
-                  A StitchFix like clone. <br />
+                  Built a JAMStack survey tool that placed in the top 6 at
+                  JAMStack 2018. Used Formspree, React, and Gatsby.js. <br />
                   <u>
                     <a
                       style={{ color: 'black' }}
@@ -64,17 +55,21 @@ class PortfolioContainer extends Component {
                   .
                 </p>
               </div>
-              <div className="portfolio-title">
-                <h2>Dialpad</h2>
+            </div>
+
+            <div className="rithm-div">
+              <div className="portfolio-content-title">
+                <h2>Rithm School</h2>
               </div>
               <div className="portfolio-body">
                 <p>
                   {' '}
-                  A StitchFix like clone. <br />
+                  Developed over 30 projects using React, Node / Express,
+                  Python, jQuery, Bootstrap, and Flask. <br />
                   <u>
                     <a
                       style={{ color: 'black' }}
-                      href="https://github.com/zeuslawyer/visiJAM"
+                      href="https://github.com/arecesj"
                     >
                       Learn more here
                     </a>
@@ -84,10 +79,13 @@ class PortfolioContainer extends Component {
               </div>
             </div>
           </div>
-          <br />
-          <a style={{ textAlign: 'center' }} href="https://github.com/arecesj">
+
+          <a
+            style={{ textAlign: 'center', marginLeft: '1rem' }}
+            href="https://github.com/arecesj"
+          >
             <Button color="info">
-              My GitHub <FaArrowRight />
+              GitHub <FaArrowRight />
             </Button>
           </a>
         </div>
